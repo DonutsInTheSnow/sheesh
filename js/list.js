@@ -1,5 +1,5 @@
 
-	function chooseSong() {
+function chooseSong() {
 		var node = document.createElement("p");
 		let songs = [
 			"100 Damian Marley – Welcome To Jamrock",
@@ -109,8 +109,8 @@
 
 		// var stan = document.querySelector("span");
 		var stan1 = document.getElementById("stan1");
-  		stan1.insertBefore(node, stan1.childNodes[0]);
-  		// span.insertBefore(node, span.childNodes[0]);
+  		// stan1.insertBefore(node, stan1.childNodes[0]);
+  		stan1.replaceChild(node, stan1.childNodes[0]);
 	}
 
 	function chooseAlbum() {
@@ -223,10 +223,7 @@
 		document.body.appendChild(node);
 
 		var stan2 = document.getElementById("stan2");
-  		stan2.insertBefore(node, stan2.childNodes[0]);
-		// var stan = document.querySelector("span");
-		// var stan = document.getElementById("stan");
-  		// stan.insertBefore(node, stan.childNodes[1]);
+  		stan2.replaceChild(node, stan2.childNodes[0]);
 	}
 	///////////////////////////////////
 	function chooseArtist() {
@@ -438,8 +435,6 @@
 		node.innerHTML = artists[randIndex];
 		document.body.appendChild(node);
 
-		// var stan = document.querySelector("span");
-  // 		stan.insertBefore(node, stan.childNodes[2]);
   		var stan3 = document.getElementById("stan3");
-  		stan3.insertBefore(node, stan3.childNodes[0]);
+  		stan3.replaceChild(node, stan3.childNodes[0]);
 	}
